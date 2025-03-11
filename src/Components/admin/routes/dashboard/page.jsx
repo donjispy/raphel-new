@@ -1,4 +1,4 @@
-// import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 import { useTheme } from "../../hooks/use-theme";
 
@@ -20,7 +20,7 @@ const DashboardPage = () => {
                         <div className="w-fit rounded-lg bg-blue-500/20 p-2 text-blue-500 transition-colors dark:bg-blue-600/20 dark:text-blue-600">
                             <Package size={26} />
                         </div>
-                        <p className="card-title">Total Products</p>
+                        <p className="card-title">Total User</p>
                     </div>
                     <div className="card-body bg-slate-100 transition-colors dark:bg-slate-950">
                         <p className="text-3xl font-bold text-slate-900 transition-colors dark:text-slate-50">25,154</p>
@@ -35,7 +35,7 @@ const DashboardPage = () => {
                         <div className="rounded-lg bg-blue-500/20 p-2 text-blue-500 transition-colors dark:bg-blue-600/20 dark:text-blue-600">
                             <DollarSign size={26} />
                         </div>
-                        <p className="card-title">Total Paid Orders</p>
+                        <p className="card-title">Total Deposit</p>
                     </div>
                     <div className="card-body bg-slate-100 transition-colors dark:bg-slate-950">
                         <p className="text-3xl font-bold text-slate-900 transition-colors dark:text-slate-50">$16,000</p>
@@ -81,7 +81,7 @@ const DashboardPage = () => {
                     <div className="card-header">
                         <p className="card-title">Overview</p>
                     </div>
-                    {/* <div className="card-body p-0">
+                    <div className="card-body p-0">
                         <ResponsiveContainer
                             width="100%"
                             height={300}
@@ -143,7 +143,7 @@ const DashboardPage = () => {
                                 />
                             </AreaChart>
                         </ResponsiveContainer>
-                    </div> */}
+                    </div>
                 </div>
                 <div className="card col-span-1 md:col-span-2 lg:col-span-3">
                     <div className="card-header">

@@ -3,6 +3,7 @@ import { ThemeProvider } from "./Components/admin/contexts/theme-context";
 
 import Layout from "./Components/admin/routes/layout";
 import DashboardPage from "./Components/admin/routes/dashboard/page";
+import UserManagememt from "./Components/admin/UserManagememt";
 
 function App() {
     const router = createBrowserRouter([
@@ -11,6 +12,7 @@ function App() {
             element: <Layout />,
             children: [
                 { index: true, element: <DashboardPage /> },
+                { path: "usermanagement", element: <UserManagememt /> },
                 { path: "analytics", element: <h1 className="title">Analytics</h1> },
                 { path: "reports", element: <h1 className="title">Reports</h1> },
                 { path: "customers", element: <h1 className="title">Customers</h1> },
@@ -23,6 +25,7 @@ function App() {
             ],
         },
     ]);
+    
 
     return (
         <ThemeProvider storageKey="theme">

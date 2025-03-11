@@ -1,4 +1,15 @@
-import { ChartColumn, Home, NotepadText, Package, PackagePlus, Settings, ShoppingBag, UserCheck, UserPlus, Users } from "lucide-react";
+import { 
+    ChartColumn, 
+    Home, 
+    NotepadText, 
+    Package, 
+    PackagePlus, 
+    Settings, 
+    ShoppingBag, 
+    UserCheck, 
+    UserPlus, 
+    Users 
+} from "lucide-react";
 
 import ProfileImage from "../assets/profile-image.jpg";
 import ProductImage from "../assets/product-image.jpg";
@@ -10,17 +21,17 @@ export const navbarLinks = [
             {
                 label: "Dashboard",
                 icon: Home,
-                path: "/",
+                path: "/admin",
             },
             {
                 label: "Analytics",
                 icon: ChartColumn,
-                path: "/analytics",
+                path: "/admin/analytics",
             },
             {
                 label: "Reports",
                 icon: NotepadText,
-                path: "/reports",
+                path: "/admin/reports",
             },
         ],
     },
@@ -30,17 +41,17 @@ export const navbarLinks = [
             {
                 label: "Customers",
                 icon: Users,
-                path: "/customers",
+                path: "/admin/customers",
             },
             {
                 label: "New customer",
                 icon: UserPlus,
-                path: "/new-customer",
+                path: "/admin/new-customer",
             },
             {
                 label: "Verified customers",
                 icon: UserCheck,
-                path: "/verified-customers",
+                path: "/admin/verified-customers",
             },
         ],
     },
@@ -50,17 +61,17 @@ export const navbarLinks = [
             {
                 label: "Products",
                 icon: Package,
-                path: "/products",
+                path: "/admin/products",
             },
             {
                 label: "New product",
                 icon: PackagePlus,
-                path: "/new-product",
+                path: "/admin/new-product",
             },
             {
                 label: "Inventory",
                 icon: ShoppingBag,
-                path: "/inventory",
+                path: "/admin/inventory",
             },
         ],
     },
@@ -70,7 +81,7 @@ export const navbarLinks = [
             {
                 label: "Settings",
                 icon: Settings,
-                path: "/settings",
+                path: "/admin/settings",
             },
         ],
     },
