@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { ThemeProvider } from "@/admin/contexts/theme-context";
+import { ThemeProvider } from "./Components/admin/contexts/theme-context";
 
-import Layout from "@/admin/routes/layout";
-import DashboardPage from "@/admin/routes/dashboard/page";
+import Layout from "./Components/admin/routes/layout";
+import DashboardPage from "./Components/admin/routes/dashboard/page";
 
 function App() {
     const router = createBrowserRouter([
